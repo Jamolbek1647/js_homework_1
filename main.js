@@ -98,3 +98,39 @@ const p3 = new student('Madina', 'Matqulova', 24, {oquv_joyi: 'TATU', kurs: 3, y
 // console.log(p3);
 
 
+const main_info = Object.create({},{
+    car_name:{
+        value:String,
+        writable:true
+    },
+    car_color:{
+        value:String,
+        writable:true
+    },
+    car_price:{
+        value:String,
+        writable: true
+    }
+}) 
+const configaration = Object.create({},{
+    ot_kuchi:{
+        value:Number,
+        writable:true
+    },
+    dvigatel_hajmi:{
+        value:Number,
+        writable:true
+    },
+    bak_hajmi:{
+        value:Number,
+        writable:true
+    }
+})
+function Car(car_name,car_color,car_price,configaration){
+    this.car_name = car_name,
+    this.car_color = car_color,
+    this.car_price = car_price,
+    this.configaration = configaration
+}
+const p4 = new Car('Nexia-3', 'white', 110000,{ot_kuchi:120, dvigatel_hajmi:12, bak_hajmi:50})
+console.log(p4);
