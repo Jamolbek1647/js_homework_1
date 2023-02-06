@@ -1,2 +1,3 @@
-# js_homework_1
-# js_homework_2
+# js_homework
+homework 1 bajarildi
+homework 2 bajarilmagan
