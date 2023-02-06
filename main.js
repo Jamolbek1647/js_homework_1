@@ -54,7 +54,7 @@ const p1 = new Person('Kamol', 'Ikromov', 25, {country:'Uzbekiston', viloyat:'Bu
 // console.log(p1);
 
 const p2 = new Person('Bekzod', 'Sharipov', 26, {country:'Uzbekiston', viloyat:'Buxoro', tuman:'Buxoro', mahalla:'Alisher Navoiy', kocha:'Trikotaj'})
-// console.log(p2);
+console.log(p2);
 
 
 
@@ -88,49 +88,49 @@ const talaba_info2 = Object.create({},
             writable:true
         }
     })
-function student(firstname, lastname, age, talaba_info2){
+function Student(firstname, lastname, age, talaba_info2){
     this.firstname = firstname
     this.lastname = lastname
     this.age = age
     this.talaba_info2 = talaba_info2
 }
-const p3 = new student('Madina', 'Matqulova', 24, {oquv_joyi: 'TATU', kurs: 3, yonalish:'DIF'})
-// console.log(p3);
+const p3 = new Student('Madina', 'Matqulova', 24, {oquv_joyi: 'TATU', kurs: 3, yonalish:'DIF'})
+console.log(p3);
 
 
 const main_info = Object.create({},{
     car_name:{
-        value:String,
+        value:'Lacetti',
         writable:true
     },
     car_color:{
-        value:String,
+        value:'yellow',
         writable:true
     },
     car_price:{
-        value:String,
+        value:12000,
         writable: true
     }
 }) 
 const configaration = Object.create({},{
     ot_kuchi:{
-        value:Number,
+        value:16,
         writable:true
     },
     dvigatel_hajmi:{
-        value:Number,
+        value:14,
         writable:true
     },
     bak_hajmi:{
-        value:Number,
+        value:12,
         writable:true
     }
 })
-function Car(car_name,car_color,car_price,configaration){
-    this.car_name = car_name,
-    this.car_color = car_color,
-    this.car_price = car_price,
+function Car(main_info,configaration){
+    this.car_name = main_info.car_name,
+    this.car_color = main_info.car_color,
+    this.car_price = main_info.car_price,
     this.configaration = configaration
 }
-const p4 = new Car('Nexia-3', 'white', 110000,{ot_kuchi:120, dvigatel_hajmi:12, bak_hajmi:50})
+const p4 = new Car({car_name:'Nexia-3', car_color:'white', car_price:11000},{ot_kuchi:120, dvigatel_hajmi:12, bak_hajmi:50})
 console.log(p4);
