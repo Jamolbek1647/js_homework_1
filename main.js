@@ -51,7 +51,7 @@ function Person(firstname, lastname, age, address){
     this.address = address;
 }
 const p1 = new Person('Kamol', 'Ikromov', 25, {country:'Uzbekiston', viloyat:'Buxoro', tuman:'Buxoro', mahalla:'Mohitobon', kocha:'Gijduvoniy'})
-// console.log(p1);
+console.log(p1);
 
 const p2 = new Person('Bekzod', 'Sharipov', 26, {country:'Uzbekiston', viloyat:'Buxoro', tuman:'Buxoro', mahalla:'Alisher Navoiy', kocha:'Trikotaj'})
 console.log(p2);
